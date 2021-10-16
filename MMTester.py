@@ -1,41 +1,33 @@
-# Define the actions for each choice we want to offer.
-def ride_bicycle():
-    print("\nHere's a bicycle. Have fun!\n")
-    
-def go_running():
-    print("\nHere are some running shoes. Run fast!\n")
-    
-def climb_mountain():
-    print("\nHere's a map. Can you leave a trip plan for us?\n")
 
-# Give the user some context.
-print("\nWelcome to the nature center. What would you like to do?")
+'''import random   
+moneyToday = (random.randint(3,50))  # x 
 
-# Set an initial value for choice other than the value for 'quit'.
-choice = ''
+print ("you have " + str(int(moneyToday)) + " INR today")
 
-# Start a loop that runs until the user enters the value for 'quit'.
-while choice != 'q':
-    # Give all the choices in a series of print statements.
-    print("\n[1] Enter 1 to take a bicycle ride.")
-    print("[2] Enter 2 to go for a run.")
-    print("[3] Enter 3 to climb a mountain.")
-    print("[q] Enter q to quit.")
-    
-    # Ask for the user's choice.
-    choice = input("\nWhat would you like to do? ")
-    
-    # Respond to the user's choice.
-    if choice == '1':
-        ride_bicycle()
-    elif choice == '2':
-        go_running()
-    elif choice == '3':
-        climb_mountain()
-    elif choice == 'q':
-        print("\nThanks for playing. See you later.\n")
-    else:
-        print("\nI don't understand that choice, please try again.\n")
-        
-# Print a message that we are all finished.
-print("Thanks again, bye now.")
+ 
+# Ask How many bottles you want to make today 
+
+bottMade = float(input("How many bottles you want to make today out of " + str(int(moneyToday/2.08)) + ": ")) '''  # y 
+     # Give error if exceeds possible number y which is x/2.08
+     # later mater 
+     # Loop it later
+
+#random amount of money between 3 to 50
+import random   
+moneyToday = (random.randint(3,50))  # x 
+
+print ("you have " + str(int(moneyToday)) + " INR today")
+
+#2.08 is cost of 1 shovel
+BM1 = moneyToday/2.08
+
+#how many shovels to make out of "moneyToday"?(user input)
+shovMade = float(input("How many bottles you want to make today out of " + str(int(moneyToday/2.08)) + ": "))
+
+#####this loop does not work (I need help in this)#####
+if shovMade > BM1:
+    input("Please put a number below " + str(int(moneyToday/2.08)) + ": ")
+
+else:
+    print("tadaa, it works!!!")
+

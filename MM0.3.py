@@ -29,8 +29,7 @@
 import random   
 moneyToday = (random.randint(3,50))  # x 
 
-def getMoney():
-      print ("you have " + str(int(moneyToday)) + " INR today")    
+print ("you have " + str(int(moneyToday)) + " INR today")
 
 
 ## Costs associated ( Sample case)
@@ -41,34 +40,53 @@ def getMoney():
 # Ask how much you will sell bottle for = 10 Rs per bottle
  
 # Ask How many bottles you want to make today 
-# def ride_bicycle():
-#     print("\nHere's a bicycle. Have fun!\n")
+
 bottMade = float(input("How many bottles you want to make today out of " + str(int(moneyToday/2.08)) + ": "))   # y 
-def makeBottle():
      # Give error if exceeds possible number y which is x/2.08
      # later mater 
      # Loop it later 
-     print("Processsing ... ")
-     # wait for 3 seconds  -- later 
-     import time
-     time.sleep(3)
-     # Made y number of bottles 
-     print("Made " + str(int(bottMade)) + " bottles")
-     # Bottles are ready to sell .. Happy selling. 
-     print("Ready to sell bottles ---->>>>selling time >>>  " + str(int(bottMade)) + "")
-     return bottMade
-sellPrice = float(input("For how much > 2.08 do you want to sell your bottles for?: "))  # z 
-bottSold = float(input("How many bottles you sold : "))  # n  ( make random)
 
-def sellBottle():
-     print("Processing ... ") 
-     import time 
-     time.sleep(3)
+
+print("Creating Bottles ... ")
+     # wait for 3 seconds  -- later 
+import time
+time.sleep(3)
+
+
+     # Made y number of bottles 
+print("Made " + str(int(bottMade)) + " bottles")
+     # Bottles are ready to sell .. Happy selling. 
+print("Ready to sell bottles " + str(int(bottMade)) + "")
+print("----Selling time----")
+     #return bottMade
+sellPrice = float(input("For how much > 2.08 do you want to sell your bottles for?: "))  # z
+
+
+
+
+print("Selling bottles ... ")
+     # wait for 3 seconds  -- later 
+import time
+time.sleep(3)
+
+#Bottle sold
+
+import random   
+bottSold = (random.randint(0,bottMade))  # x 
+
+if bottSold > 1:
+    print("you sold " + str(int(bottSold)) + " bottle's")
+
+else :
+    print("you sold " + str(int(bottSold)) + " bottle")
+
+
+#EoD Process
 #work on this
 # Check inventory should be y-n 
-print ("Inventory should be " + str(int(bottMade - bottSold)) + ", is it ok ? ")
+print ("Inventory is " + str(int(bottMade - bottSold)) + ", is it ok ? ")
  # Check money box should be  n*10 
-print ("Money box  should have " + str(int(bottSold*sellPrice)) + " INR, is it ok ? ")
+print ("Money box has " + str(int(bottSold*sellPrice)) + " INR, is it ok ? ")
   
 
 def calcPL():
@@ -81,7 +99,7 @@ def calcPL():
      else:
       print(" You have no profit nor loss")
 
-getMoney()
-makeBottle()
-sellBottle()
-calcPL()
+#getMoney()
+#makeBottle()
+#sellBottle()
+#calcPL()
