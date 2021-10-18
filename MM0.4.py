@@ -1,11 +1,15 @@
-# Sunil Money Maker Version 0.3
+# Sunil Money Maker Version 0.4
 # First creation date : 3 feb 2021 
-# Last updted date : 15 oct 2021
+# Last updted date : 18 oct 2021
 # Remarks 
 # Using functions 
+#loop is working
 
 # Done
-#  6 Use of Constants 
+#  loop finally work!!!
+# Ask 4 bottle sold twice
+# Ask actual price of bottle only once 
+# Selling amount of bottle is Randomly selected
 
 # Still need to do 
 #  2 give profit % 
@@ -18,8 +22,7 @@
 # Purpose
 # Make a program to sell water bottles 
 #(bug)
-# Ask 4 bottle sold twice
-# Ask actual price of bottle only once
+
 
 #################################################################################################################
 
