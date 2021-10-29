@@ -21,7 +21,8 @@
 
 # Purpose
 # Make a program to sell water bottles 
-#(bug)
+
+#(bugs)
 
 
 #################################################################################################################
@@ -29,7 +30,9 @@
 
 # You have  x amount of money  
 # This gets reset every time 
-import random   
+
+while True:
+     import random   
 moneyToday = (random.randint(3,50))  # x 
 
 print ("you have " + str(int(moneyToday)) + " INR today")
@@ -44,7 +47,7 @@ print ("you have " + str(int(moneyToday)) + " INR today")
 # Ask how much you will sell bottle for = 10 Rs per bottle
  
 # Ask How many bottles you want to make today 
-maxBott = int(moneyToday/2.08)
+maxBott = int(moneyToday/2)
 bottMade = int(input("How many bottles you want to make today out of " + str(int(moneyToday/2.08)) + ": "))   # y 
      # Give error if exceeds possible number y which is x/2.08
      # later mater 
@@ -66,7 +69,7 @@ print("Made " + str(int(bottMade)) + " bottles")
 print("Ready to sell bottles " + str(int(bottMade)) + "")
 print("----Selling time----")
      #return bottMade
-sellPrice = float(input("For how much > 2.08 do you want to sell your bottles for?: "))  # z
+sellPrice = float(input("For how much >2 do you want to sell your bottles for?: "))  # z
 
 
 
@@ -94,17 +97,28 @@ else :
 print ("Inventory is " + str(int(bottMade - bottSold)) + ", is it ok ? ")
  # Check money box should be  n*10 
 print ("Money box has " + str(int(bottSold*sellPrice)) + " INR, is it ok ? ")
+
+print("Calculating profit or loss ...")
+
+import time
+time.sleep(3)
   
 
-def calcPL():
-     if(2.8 > sellPrice):
+if(2.8 > sellPrice):
       amount = 2.8 - sellPrice
       print(" You have a loss of {0} INR ".format(amount*bottSold))
-     elif (sellPrice > 2.8):
+elif (sellPrice > 2.8):
       amount = sellPrice - 2.8
       print(" you have a profit of {0} INR ".format(amount*bottSold))
-     else:
+else:
       print(" You have no profit nor loss")
+
+print("end of day one")
+
+if check.upper() == "x":
+     quit
+
+print("Quitted")
 
 #getMoney()
 #makeBottle()
