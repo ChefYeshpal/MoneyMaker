@@ -7,7 +7,7 @@
 
 # Done
 #  loop finally work!!!
-# Ask 4 bottle sold twice
+# Ask for bottle sold twice
 # Ask actual price of bottle only once 
 # Selling amount of bottle is Randomly selected
 
@@ -31,8 +31,7 @@
 # You have  x amount of money  
 # This gets reset every time 
 
-while True:
-     import random   
+import random   
 moneyToday = (random.randint(3,50))  # x 
 
 print ("you have " + str(int(moneyToday)) + " INR today")
@@ -115,8 +114,8 @@ else:
 
 print("end of day one")
 
-if check.upper() == "x":
-     quit
+'''if check.upper() == "x":
+     quit'''
 
 print("Quitted")
 

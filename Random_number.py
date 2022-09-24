@@ -1,3 +1,4 @@
-import random    
-x = (random.randint(1,5))
-print (str(int(x)))
+import random   
+moneyToday = (random.randint(3,50))  # x 
+
+print ("you have " + str(int(moneyToday)) + " INR today")
