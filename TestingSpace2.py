@@ -1,20 +1,15 @@
-import json
+#StartTime = int(input("Start time: "))
+#EndTime = int(input("End time: "))
+#Timetaken = StartTime - EndTime
 
-x = {
-  "name": "John",
-  "age": 30,
-  "married": True,
-  "divorced": False,
-  "children": ("Ann","Billy"),
-  "pets": None,
-  "cars": [
-    {"model": "BMW 230", "mpg": 27.5},
-    {"model": "Ford Edge", "mpg": 24.1}
-  ]
-}
+'''if StartTime.isnumeric:
+    input("please put a number: ")
+else:
+    print("-------------------------------")'''
 
-# convert into JSON:
-y = json.dumps(x)
+while ST := input("Start Time: "):
+    if not ST.isalpha():
+        break
 
-# the result is a JSON string:
-print(y)
+
+
